@@ -6,13 +6,18 @@ Time spent: Approximately 4 hours.
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
+1. Large File Upload Error XSS
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.15
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
+        1)Have a user post a comment wtih HTML tags and some type of script. It is important to note that the comment must be                   larger than 64KB.
+        2) Example snippit:
+        ```HTML
+        <a title='xxx onmouseover=alert(unescape(/hello%20world/.source))             style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>
+        ```
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
