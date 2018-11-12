@@ -33,7 +33,8 @@ Time spent: Approximately 4 hours.
         <a title='xxx onmouseover=alert(unescape(/this%20is%20bad/.source))             style=position:absolute;left:0;top:0;width:5000px;height:5000px  XXXXXXXX...(50k X's to ensure 64KB...XXXXX'></a>
       
   - [ ] Affected source code:
-    I could not find affected source code.
+    I could not find affected source code, but there is amplifying information found at:
+    [Link 1] (https://packetstormsecurity.com/files/131644/)
     
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
