@@ -11,7 +11,7 @@ Time spent: Approximately 4 hours.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.15
-  - [X] GIF Walkthrough: 
+  - [X] GIF Walkthrough:  ![](Attack1.gif)
   - [X] Steps to recreate: 
      -We need to create a file that is 20 MB or larger. The file name should have the payload script embedded in it.      Example file ~26MB: uploadme<img src=x onerror=alert(1)>.png  
      -The next goal would be to trick an admin of the site to upload the file into the site.  
