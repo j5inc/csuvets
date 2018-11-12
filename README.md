@@ -25,7 +25,7 @@ Time spent: Approximately 4 hours.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [X] GIF Walkthrough: 
+  - [X] GIF Walkthrough:  ![](Attack2.gif) 
   - [X] Steps to recreate:    
         -Post a comment wtih HTML tags and some type of script. It is important to note that the comment must be                     larger than 64KB.  
        -Example snippit:  
