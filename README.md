@@ -21,13 +21,13 @@ Time spent: Approximately 4 hours.
     [Link 1] (https://core.trac.wordpress.org/browser/trunk/src/wp-includes/script-loader.php)
 
 2. Unauthenticated Stored Cross-Site Scripting  
-  - [ ] Summary: 
+  - [X] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate:  
-        -Have a user post a comment wtih HTML tags and some type of script. It is important to note that the comment must be                     larger than 64KB.  
+  - [X] GIF Walkthrough: 
+  - [X] Steps to recreate:    
+        -Post a comment wtih HTML tags and some type of script. It is important to note that the comment must be                     larger than 64KB.  
        -Example snippit:  
         ```HTML
         <a title='xxx onmouseover=alert(unescape(/hello/.source))             style=position:absolute;left:0;top:0;width:5000px;height:5000px  XXXXXXXX...(50k X's to ensure 64KB...XXXXX'></a>
