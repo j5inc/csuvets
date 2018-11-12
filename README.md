@@ -29,9 +29,9 @@ Time spent: Approximately 4 hours.
   - [X] Steps to recreate:    
         -Post a comment wtih HTML tags and some type of script. It is important to note that the comment must be                     larger than 64KB.  
        -Example snippit:  
-        ```HTML
-        <a title='xxx onmouseover=alert(unescape(/hello/.source))             style=position:absolute;left:0;top:0;width:5000px;height:5000px  XXXXXXXX...(50k X's to ensure 64KB...XXXXX'></a>
-       ```
+        HTML
+        <a title='xxx onmouseover=alert(unescape(/this%20is%20bad/.source))             style=position:absolute;left:0;top:0;width:5000px;height:5000px  XXXXXXXX...(50k X's to ensure 64KB...XXXXX'></a>
+      
   - [ ] Affected source code:
     I could not find affected source code.
     
