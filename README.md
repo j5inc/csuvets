@@ -13,22 +13,28 @@ Time spent: Approximately 4 hours.
     - Fixed in version: 4.2.15
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
-        1)Have a user post a comment wtih HTML tags and some type of script. It is important to note that the comment must be                   larger than 64KB.
-        2) Example snippit:
-        ```HTML
-        <a title='xxx onmouseover=alert(unescape(/hello%20world/.source))             style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>
-        ```
+     -We need to create a file that is 20 MB or larger. The file name should have the payload script embedded in it.
+     -The next goal would be to trick an admin of the site to upload the file into the site.
+     -Since the file is larger than 20MB, WordPress reads the file name and executes the script that is embedded.
+     -Report found in WPScan: https://hackerone.com/reports/203515  
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+    [Link 1] (https://core.trac.wordpress.org/browser/trunk/src/wp-includes/script-loader.php)
+
+2. Unauthenticated Stored Cross-Site Scripting  
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.1
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+  - [ ] Steps to recreate:  
+        -Have a user post a comment wtih HTML tags and some type of script. It is important to note that the comment must be                     larger than 64KB.  
+       -Example snippit:  
+        ```HTML
+        <a title='xxx onmouseover=alert(unescape(/hello/.source))             style=position:absolute;left:0;top:0;width:5000px;height:5000px  XXXXXXXX...(50k X's to ensure 64KB...XXXXX'></a>
+       ```
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    I could not find affected source code.
+    
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
