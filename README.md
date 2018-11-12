@@ -13,7 +13,7 @@ Time spent: Approximately 4 hours.
     - Fixed in version: 4.2.15
   - [X] GIF Walkthrough: 
   - [X] Steps to recreate: 
-     -We need to create a file that is 20 MB or larger. The file name should have the payload script embedded in it.  
+     -We need to create a file that is 20 MB or larger. The file name should have the payload script embedded in it.      Example file ~26MB: uploadme<img src=x onerror=alert(1)>.png  
      -The next goal would be to trick an admin of the site to upload the file into the site.  
      -Since the file is larger than 20MB, WordPress reads the file name and executes the script that is embedded.  
      -Report found in WPScan: https://hackerone.com/reports/203515  
