@@ -65,7 +65,7 @@ Time spent: Approximately 4 hours.
 
 ## Assets
 
-List any additional assets, such as scripts or files
+20MB+ file with embedded script for attack #1.
 
 ## Resources
 
