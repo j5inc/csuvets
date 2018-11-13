@@ -37,11 +37,11 @@ Time spent: Approximately 4 hours.
     [Link 1] (https://packetstormsecurity.com/files/131644/)
     
 3. WordPress User Enumeration
-  - [ ] Summary: 
+  - [X] Summary: 
     - Vulnerability type: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: It is unclear to me when this type of enumeration was patched. One way to fix this in all versions is to apply a plugin. 
-  - [ ] GIF Walkthrough: 
+  - [X] GIF Walkthrough:  ![](Attack3.gif)  
   - [ ] Steps to recreate:  We can enumerate in this version by simply trying username and password combos. As you can see, in the GIF, when I put in invalid usernames it says "Invalid Username". As soon as I do a valid username with an incorrect password, we are given: "The password you entered for the username enumtestuser is incorrect". By automating something like this, a hacker could potentially guess a valid username.
   
   - [ ] Affected source code:  I was not able to locate the exact code responsible. I did find a plugin called "Unified Login Error Messgages" that outputs the message "Invalid username/password combination" when a valid username is entered.
