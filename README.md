@@ -46,28 +46,20 @@ Time spent: Approximately 4 hours.
   
   - [X] Affected source code:  I was not able to locate the exact code responsible. I did find a plugin called "Unified Login Error Messgages" that outputs the message "Invalid username/password combination" when a valid username is entered.
     
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+4. Authenticated Stored Cross-Site Scripting
+  - [ ] Summary:  
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.13
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+
 
 ## Assets
 
-20MB+ file with embedded script for attack #1.
+26MB dummy file with embedded script for Attack #1.
 
 ## Resources
 
