@@ -51,7 +51,7 @@ Time spent: Approximately 4 hours.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.13
-  - [X] GIF Walkthrough: 
+  - [X] GIF Walkthrough:  ![](Attack4.gif) 
   - [X] Steps to recreate:  -Make a post on WordPress using a shortcode YouTube link with embedded script.  -The account will need to be at least a contributor.  -To avoid input validation, use \x3c and \x3e as the Javascript escape characters. -Example:  [embed src='http://www.youtube.com/embed/JuYeHPFR3f0\x3csvg onload=alert(1)\x3e'][/embed]
 
 - [X] Affected source code:
