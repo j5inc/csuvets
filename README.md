@@ -18,7 +18,7 @@ Time spent: Approximately 4 hours.
      -Since the file is larger than 20MB, WordPress reads the file name and executes the script that is embedded.  
      -Report found in WPScan: https://hackerone.com/reports/203515  
   - [X] Affected source code:
-    [Link 1] (https://core.trac.wordpress.org/browser/trunk/src/wp-includes/script-loader.php)
+    [Link 1](https://core.trac.wordpress.org/browser/trunk/src/wp-includes/script-loader.php)
 
 2. Unauthenticated Stored Cross-Site Scripting  
   - [X] Summary: 
@@ -34,7 +34,7 @@ Time spent: Approximately 4 hours.
       
   - [X] Affected source code:
     I could not find affected source code, but there is amplifying information found at:  
-    [Link 1] (https://packetstormsecurity.com/files/131644/)
+    [Link 1](https://packetstormsecurity.com/files/131644/)
     
 3. WordPress User Enumeration
   - [X] Summary: 
