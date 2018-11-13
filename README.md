@@ -54,7 +54,7 @@ Time spent: Approximately 4 hours.
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate:  -Make a post on WordPress using a YouTube link with embedded script.  -The account will need to be at least a contributor.  -To avoid input validation, use \x3c and \x3e as the Javascript escape characters.
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://core.trac.wordpress.org/browser/trunk/src/wp-includes/embed.php)
 
 
 ## Assets
