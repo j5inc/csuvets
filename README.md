@@ -71,7 +71,7 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+One of the challenges I faced is having an older computer. My MacBook has 4GB of RAM and is limiting my ability to seamlessly switch between virtual environments.
 
 ## License
 
