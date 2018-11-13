@@ -47,13 +47,14 @@ Time spent: Approximately 4 hours.
   - [X] Affected source code:  I was not able to locate the exact code responsible. I did find a plugin called "Unified Login Error Messgages" that outputs the message "Invalid username/password combination" when a valid username is entered.
     
 4. Authenticated Stored Cross-Site Scripting
-  - [ ] Summary:  
+  - [X] Summary:  
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.13
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate:  -Make a post on WordPress using a YouTube link with embedded script.  -The account will need to be at least a contributor.  -To avoid input validation, use \x3c and \x3e as the Javascript escape characters.
-  - [ ] Affected source code:
+  - [X] GIF Walkthrough: 
+  - [X] Steps to recreate:  -Make a post on WordPress using a shortcode YouTube link with embedded script.  -The account will need to be at least a contributor.  -To avoid input validation, use \x3c and \x3e as the Javascript escape characters. -Example:  [embed src='http://www.youtube.com/embed/JuYeHPFR3f0\x3csvg onload=alert(1)\x3e'][/embed]
+
+- [X] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/trunk/src/wp-includes/embed.php)
 
 
