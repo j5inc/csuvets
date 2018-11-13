@@ -8,7 +8,7 @@ Time spent: Approximately 4 hours.
 
 1. Large File Upload Error XSS
   - [X] Summary: 
-    - Vulnerability types: XSS
+    - Vulnerability type: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.15
   - [X] GIF Walkthrough:  ![](Attack1.gif)
@@ -22,7 +22,7 @@ Time spent: Approximately 4 hours.
 
 2. Unauthenticated Stored Cross-Site Scripting  
   - [X] Summary: 
-    - Vulnerability types: XSS
+    - Vulnerability type: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
   - [X] GIF Walkthrough:  ![](Attack2.gif) 
@@ -32,13 +32,13 @@ Time spent: Approximately 4 hours.
         HTML
         <a title='xxx onmouseover=alert(unescape(/this%20is%20bad/.source))             style=position:absolute;left:0;top:0;width:5000px;height:5000px  XXXXXXXX...(50k X's to ensure 64KB...XXXXX'></a>
       
-  - [ ] Affected source code:
+  - [X] Affected source code:
     I could not find affected source code, but there is amplifying information found at:  
     [Link 1] (https://packetstormsecurity.com/files/131644/)
     
 3. WordPress User Enumeration
   - [ ] Summary: 
-    - Vulnerability types: User Enumeration
+    - Vulnerability type: User Enumeration
     - Tested in version: 4.2
     - Fixed in version: It is unclear to me when this type of enumeration was patched. One way to fix this in all versions is to apply a plugin. 
   - [ ] GIF Walkthrough: 
